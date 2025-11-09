@@ -1,4 +1,5 @@
-import asyncio, os
+import asyncio
+import os
 import discord
 from discord.ext import commands
 from config import token
@@ -12,13 +13,13 @@ bot = commands.Bot(command_prefix="k.", intents=intents, help_command=None)
 async def on_ready():
     print(f"[BOT] {bot.user} online")
 
-    for f in sorted(os.listdir("utils")):
+    for f in sorted(os.listdir("cogs")):
         if f.endswith(".py"):
             try:
-                await bot.load_extension(f"utils.{f[:-3]}")
-                print(f"[UTIL] {f[:-3]} ✓")
+                await bot.load_extension(f"cogs.{f[:-3]}")
+                print(f"[COG] {f[:-3]} ✓")
             except Exception as e:
-                print(f"[UTIL] {f[:-3]} ✗ {e}")
+                print(f"[COG] {f[:-3]} ✗ {e}")
 
     try:
         await bot.tree.sync()
