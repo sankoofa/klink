@@ -36,3 +36,8 @@ def get_file_content(data):
     
     lines = response.text.splitlines()
     return lines[data['start_line'] - 1 : data['end_line']]
+
+
+def parseX_url(url):
+    parsed = urlparse(url)
+        

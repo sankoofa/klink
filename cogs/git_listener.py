@@ -12,6 +12,10 @@ class GitHubListener(commands.Cog):
         if message.author == self.bot.user:
             return
             
+        if message.guild is None:
+            await message.channel.send('no time in dms tro')
+            return
+            
         match = re.search(
             r'https?://(?:www\.)?github\.com/[\w\-\.]+/[\w\-\.]+/blob/[\w\-\/\.]+#L\d+(?:-L\d+)?',
             message.content
