@@ -5,9 +5,9 @@ import requests
 
 def parse_url(url: str):
     """
-    extracts information from a github url that references specific lines of code.
+    Extracts information from a github url that references specific lines of code.
 
-    returns a dictionary containing:
+    Returns a dictionary containing:
     - user: username or organization name
     - repo: repository name
     - branch: branch name
@@ -43,7 +43,7 @@ def parse_url(url: str):
 
 def get_file_content(data: dict):
     """
-    downloads the raw content of a github file and returns
+    Downloads the raw content of a github file and returns
     only the lines specified (from start_line to end_line).
     """
     raw_url = (
