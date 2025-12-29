@@ -6,8 +6,7 @@
 ![Status](https://img.shields.io/badge/status-active-success.svg)
 ![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen.svg)
 
-A lightweight Discord bot written in **Python** that automatically detects and enhances links from  
-**GitHub** and **Twitter/X** — fetching code snippets and re-embedding tweets with style and precision.
+A lightweight Discord bot written in **Python** that automatically detects and enhances links from **GitHub** and **Twitter/X** — fetching code snippets and re-embedding tweets with style and precision.
 
 ---
 
@@ -18,6 +17,13 @@ A lightweight Discord bot written in **Python** that automatically detects and e
 - **Modular Design** → Organized into self-contained cogs for easy extension and maintenance.  
 - **Rate Limiting & Error Handling** → Prevents spam and gracefully handles API failures.  
 - **Multi-Line & Media Support** → Handles code ranges, images, videos, and quoted/replied tweets seamlessly.
+
+---
+
+## 💡 Inspiration
+
+This project was inspired by and based on the concept of **Genesis**, part of the [Heliópolis](https://heliopolis.live/atums/genesis) ecosystem.
+
 ---
 
 ## ⚠️ Limitations
