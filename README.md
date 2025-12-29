@@ -20,49 +20,6 @@ A lightweight Discord bot written in **Python** that automatically detects and e
 - **Multi-Line & Media Support** → Handles code ranges, images, videos, and quoted/replied tweets seamlessly.
 ---
 
-## 🚀 Setup
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/spliffdasorte/klink.git
-cd klink
-````
-
-### 2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Add your Discord bot token
-
-Edit the file `config.py`:
-
-```python
-DISCORD_TOKEN = "YOUR_DISCORD_TOKEN_HERE"
-```
-
-### 4. Invite the bot to your server
-
-* Create a bot at the [Discord Developer Portal](https://discord.com/developers/applications)
-* Enable **Message Content Intent**
-* Use the OAuth2 URL generator with these permissions:
-
-  * ✅ Send Messages
-  * ✅ Read Message History
-  * ✅ Embed Links
-  * ✅ Manage Messages *(for embed suppression)*
-
-### 5. Run the bot
-
-```bash
-python main.py
-```
-
-The bot will log in and automatically load all cogs.
-
----
-
 ## ⚠️ Limitations
 
 * Depends on **third-party APIs** (e.g. `fxtwitter.com` for tweet data).
