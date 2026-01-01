@@ -23,11 +23,3 @@ A lightweight Discord bot written in **Python** that automatically detects and e
 ## 💡 Inspiration
 
 This project was inspired by and based on the concept of **Genesis**, part of the [Heliópolis](https://heliopolis.live/atums/genesis) ecosystem.
-
----
-
-## ⚠️ Limitations
-
-* Depends on **third-party APIs** (e.g. `fxtwitter.com` for tweet data).
-* Only works with **public GitHub repositories** (no private repo access).
-* Twitter/X endpoints may occasionally change, requiring small updates.
